@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascata, Especifidade e Combinadores  e Box Model e Display</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<h1>1.Cascata</h1>
+
+<h2>Cascata é o princípio do CSS que define qual estilo será aplicado quando houver conflito entre regras.</h2>
+
+    <li>
+    1.Importância (!important vence tudo)
+    </li>
+    <li>
+     2.Especificidade
+    </li>
+    <li>
+     3.Ordem de aparição (o último sobrescreve se tudo mais for igual)
+    </li>
+    <hr>
+    <h1>Exemplo</h1>
+
+    <img src="foto1.png"  alt="">
+    <img src="foto2.png"  alt="">
+
+    <h1>2. Especificidade</h1>
+    <hr>
+
+    <li>
+        Inline → 1000 pontos (ex: style="color: red")
+    
+    </li>
+    <li>
+        ID → 100 pontos (ex: #meuId)
+    </li>
+    <li>
+        Classe, atributo, pseudo-classe → 10 pontos (ex: .classe,
+    </li>
+    <li>
+        Elemento, pseudo-elemento → 1 ponto (ex: p, h1, ::before)
+    </li>
+    <hr>
+
+    <h2>Exemplo</h2>
+
+    <img src="foto3.png" alt="exemplo">
+
+    <h1>3. Combinadores</h1>
+    <hr>
+
+    <li>Descendente (espaço) → seleciona todos dentro.</li>
+
+    <img src="foto4.png"   alt="exemplo">
+
+    <li>
+        Filho direto ( > )
+    </li>
+
+    <img src="foto5.png"  alt="exemplo">
+
+    <li>
+        Irmão adjacente ( + )
+    </li>
+
+    <img src="foto6.png"   alt="exemplo">
+
+    <li>
+        Irmão geral ( ~ )
+    </li>
+
+    <img src="foto7.png"   alt="">
+
+    <h1>4. Box Model</h1>
+    <hr>
+
+    <h2>Todo elemento é uma caixa no CSS, formada por:</h2>
+    <li>
+    Content → conteúdo (texto, imagem).
+    </li>
+    <li>
+    Padding → espaço interno (entre conteúdo e borda).
+    </li>
+    <li>
+    Border → borda da caixa.
+    </li>
+    <li>
+    Margin → espaço externo (entre caixas).
+    </li>
+
+    <img src="foto8.png" alt="exemplo">
+    
+    <h3>O tamanho total do div será:</h3>
+
+    <img src="foto9.png" alt="exemplo">
+
+    <h1>5. Display</h1>
+    <hr>
+
+    <h2>Define como a caixa se comporta na página.</h2>
+
+    <li>block → ocupa toda a linha (div, p, h1).</li>
+    <li>inline → ocupa só o conteúdo, não quebra linha (span, a).</li>
+    <li>inline-block → mistura dos dois (respeita largura/altura mas fica em linha).</li>
+    <li>flex → cria layouts flexíveis.</li>
+    <li>grid → cria layouts em grade.</li>
+
+    <h2>Exemplo</h2>
+
+    <img src="foto10.png" alt="exemplo">
+
+    <li>Cascata → ordem de aplicação.</li>
+    <li>Especificidade → seletor mais forte vence.</li>
+    <li>Combinadores → relacionam elementos.</li>
+    <li>Box Model → estrutura da caixa (content, padding, border, margin).</li>
+    <li>Display → como a caixa aparece (block, inline, flex, grid).</li>
+
+
+
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+
